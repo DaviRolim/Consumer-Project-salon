@@ -1,0 +1,14 @@
+<table class="table table-striped">
+    <thead class="thead-inverse">
+        <tr>
+            <th class="text-center">Nome do Servico</th>
+            <th>Valor</th>
+            <th>Comissao</th>
+        </tr>
+    </thead>
+    <tr *ngFor="let f of lfuncval; let i = index; trackBy: trackByFn">
+        <th scope="row">{{f.nmFuncionario}}</th>
+        <td>R$ {{f.vlTotal}}</td>
+        <td>R$ {{f.comissao}}</td>
+    </tr>
+</table>
